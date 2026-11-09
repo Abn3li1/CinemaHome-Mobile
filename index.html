@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CinemaHome Mobile</title>
+<meta name="description" content="تحميل تطبيق CinemaHome للاندرويد والايفون">
+<meta name="theme-color" content="#0c0c14">
+<link rel="icon" href="icon.png">
+<style>
+:root{color-scheme:dark;--bg:#0c0c14;--panel:#15151f;--panel2:#1d1c2b;--line:#2c2a40;--text:#f4f3fa;--soft:#aaa7bd;--brand:#6d50fa;--brand2:#a99bff}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;background:var(--bg) radial-gradient(900px 420px at 50% -120px,#2a2159 0,rgba(12,12,20,0) 72%) no-repeat;color:var(--text);font:17px/1.65 Tahoma,"Segoe UI",Arial,sans-serif}
+main{max-width:1120px;margin:auto;padding:36px 16px 44px}
+.brand{display:flex;align-items:center;justify-content:center;gap:16px;direction:ltr}
+.brand img{width:76px;height:76px;border-radius:18px}
+.name{text-align:left;line-height:1.05}
+.name b{display:block;font-size:34px;font-weight:700;letter-spacing:-.5px}
+.name i{display:block;margin-top:5px;color:var(--brand2);font-size:15px;font-style:normal;font-weight:700;letter-spacing:9px}
+.lead{margin:20px 0 26px;text-align:center;color:var(--soft)}
+#ver{color:var(--text)}
+.grid{display:grid;gap:18px}
+.dl{display:flex;align-items:center;gap:14px;padding:15px 16px;border:2px solid var(--line);border-radius:14px;background:var(--panel);color:var(--text);text-decoration:none;cursor:pointer;width:100%;font:inherit;text-align:right}
+.dl+.dl{margin-top:12px}
+.dl svg{flex:none;width:30px;height:30px;fill:none;stroke:var(--brand2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.txt{flex:1;min-width:0}
+.dl b{display:block;font-size:18px;font-weight:700;line-height:1.35}
+.dl small{display:block;color:var(--soft);font-size:14px;overflow-wrap:anywhere}
+.go{flex:none;color:var(--brand2);font-size:15px;font-weight:700}
+.dl.main{padding:22px 20px;border-color:var(--brand);background:var(--brand)}
+.dl.main svg{width:38px;height:38px;stroke:#fff}
+.dl.main b{font-size:22px}
+.dl.main small,.dl.main .go{color:#eee9ff}
+.dl.main .go{padding:8px 16px;border-radius:9px;background:rgba(0,0,0,.2);color:#fff}
+.dl:hover{border-color:var(--brand2)}
+.dl:focus-visible{outline:4px solid #fff;outline-offset:2px}
+h3{margin:22px 0 10px;color:var(--soft);font-size:15px;font-weight:700}
+h3:first-child{margin-top:0}
+section{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+section+section{margin-top:14px}
+h2{margin:0 0 10px;font-size:18px;font-weight:700}
+ol{margin:0;padding:0;list-style:none;counter-reset:s}
+ol li{position:relative;padding:0 38px 10px 0;color:var(--soft);counter-increment:s}
+ol li:last-child{padding-bottom:0}
+ol li:before{content:counter(s);position:absolute;top:0;right:0;width:27px;height:27px;border-radius:50%;background:var(--panel2);color:var(--brand2);font:700 14px/27px Tahoma,Arial,sans-serif;text-align:center}
+#notes{margin:0;color:var(--soft);white-space:pre-line}
+.tv{display:block;margin:28px auto 0;max-width:520px;padding:16px;border:2px dashed var(--line);border-radius:14px;color:var(--text);text-align:center;text-decoration:none}
+.tv b{color:var(--brand2)}
+.tv:hover{border-color:var(--brand2)}
+@media (min-width:900px){
+main{padding-top:44px}
+.grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:start}
+}
+</style>
+</head>
+<body>
+<main>
+<div class="brand">
+<img src="icon.png" width="76" height="76" alt="">
+<div class="name"><b>CinemaHome</b><i>MOBILE</i></div>
+</div>
+<p class="lead">حمّل التطبيق لموبايلك · <span id="ver">آخر إصدار</span></p>
+
+<div class="grid">
+<div>
+<h3>اندرويد</h3>
+<a class="dl main" id="apk" href="https://github.com/Abn3li1/CinemaHome-Mobile/releases/latest">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10.5l5 5 5-5M4 20h16"/></svg>
+<span class="txt"><b>تحميل للاندرويد</b><small>يشتغل على كل الموبايلات<span id="apksize"></span></small></span>
+<span class="go">تحميل</span>
+</a>
+
+<h3>ايفون</h3>
+<button class="dl" id="src" type="button">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+<span class="txt"><b>مصدر SideStore / AltStore</b><small id="srcurl">https://raw.githubusercontent.com/Abn3li1/CinemaHome-Mobile/main/store.json</small></span>
+<span class="go" id="copy">نسخ</span>
+</button>
+<a class="dl" id="ipa" href="https://github.com/Abn3li1/CinemaHome-Mobile/releases/latest">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10.5l5 5 5-5M4 20h16"/></svg>
+<span class="txt"><b>ملف IPA</b><small>للتنصيب اليدوي<span id="ipasize"></span></small></span>
+<span class="go">تحميل</span>
+</a>
+</div>
+
+<div>
+<section id="news" hidden>
+<h2>الجديد بهذا الإصدار</h2>
+<p id="notes"></p>
+</section>
+<section>
+<h2>تنصيب الاندرويد</h2>
+<ol>
+<li>حمّل الملف وافتحه.</li>
+<li>اسمح بالتثبيت إذا طلب الموبايل.</li>
+<li>بعدها التحديثات توصلك من داخل التطبيق.</li>
+</ol>
+</section>
+<section>
+<h2>تنصيب الايفون</h2>
+<ol>
+<li>نصّب SideStore أو AltStore.</li>
+<li>انسخ رابط المصدر وضيفه من قسم Sources.</li>
+<li>نصّب CinemaHome من المصدر، والتحديثات توصلك منه.</li>
+</ol>
+</section>
+</div>
+</div>
+
+<a class="tv" href="https://abn3li1.github.io/CinemaHomeTvunlimted/">لنسخة الشاشات <b>اضغط هنا</b></a>
+</main>
+<script>
+var src=document.getElementById('srcurl').textContent;
+document.getElementById('src').onclick=function(){
+  var c=document.getElementById('copy');
+  function done(){c.textContent='تم النسخ';setTimeout(function(){c.textContent='نسخ'},2000)}
+  if(navigator.clipboard)navigator.clipboard.writeText(src).then(done,function(){prompt('انسخ الرابط:',src)});
+  else prompt('انسخ الرابط:',src);
+};
+var x=new XMLHttpRequest();
+x.open('GET','https://api.github.com/repos/Abn3li1/CinemaHome-Mobile/releases/latest');
+x.onload=function(){
+  if(x.status!==200)return;
+  var r;try{r=JSON.parse(x.responseText)}catch(e){return}
+  var v=(r.tag_name||'').replace(/^v/,'');
+  if(v)document.getElementById('ver').textContent='الإصدار '+v;
+  (r.assets||[]).forEach(function(a){
+    var n=a.name.toLowerCase(),mb=' · '+Math.round(a.size/1048576)+' MB';
+    if(/\.apk$/.test(n)){document.getElementById('apk').href=a.browser_download_url;document.getElementById('apksize').textContent=mb}
+    if(/\.ipa$/.test(n)){document.getElementById('ipa').href=a.browser_download_url;document.getElementById('ipasize').textContent=mb}
+  });
+  var t=(r.body||'').replace(/\r/g,'').replace(/^##.*$/m,'').replace(/^-\s*/gm,'• ').replace(/\*\*/g,'').trim();
+  if(t){document.getElementById('notes').textContent=t;document.getElementById('news').hidden=false}
+};
+x.send();
+</script>
+</body>
+</html>
