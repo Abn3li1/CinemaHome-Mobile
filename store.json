@@ -5,7 +5,9 @@
   "website": "https://github.com/Abn3li1/CinemaHome-Mobile",
   "iconURL": "https://raw.githubusercontent.com/Abn3li1/CinemaHome-Mobile/main/icon.png",
   "tintColor": "#E50914",
-  "featuredApps": ["com.nuvio.media"],
+  "featuredApps": [
+    "com.nuvio.media"
+  ],
   "apps": [
     {
       "name": "CinemaHome",
@@ -21,14 +23,17 @@
           "version": "0.6.10",
           "buildVersion": "153",
           "date": "2026-11-09T18:00:00Z",
-          "localizedDescription": "أول نسخة من CinemaHome Mobile.",
+          "localizedDescription": "## شنو الجديد بـCinemaHome 0.6.10\n\nأول نسخة من CinemaHome للموبايل، مبنية على Nuvio 0.6.9 وبيها ميزات CinemaHome للتلفاز.\n\n### المحتوى والمصادر\n- اختيار مصدر المحتوى أول ما تفتح التطبيق.\n- إضافات جاهزة: الكتالوجات، Anime Seasons، Reelora، والترجمات من OpenSubtitles.\n- إذا وقف رابط الكتالوجات، التطبيق يحوّل تلقائياً على Cinemeta.\n- أفلام سينمانا تطلعلها روابط من المصادر الخارجية هم.\n- مستودعات البلگنات مضافة جاهزة، وبيها **إضافة سي**.\n\n### قائمة الروابط\n- صف للروابط المقترحة، وعلامة على آخر رابط شغّلته.\n- فلتر المصادر يبيّن عدد الروابط لكل مصدر، ويأشر على المصدر اللي فشل.\n- ترتيب أحسن للجودات، ومن ضمنها 800p.\n\n### المشغّل\n- إذا الرابط ميت، ينتقل تلقائياً للرابط اللي بعده.\n- زر **القص العائلي**.\n- ترجمة الترجمات بالذكاء الاصطناعي (Gemini). مفتاح Gemini تضيفه من إعدادات التشغيل.\n- يشغّل ترجمات البلگنات وملفات الترجمة المحلية.\n\n### غيرها\n- الصفحة الرئيسية تبيّن كتالوجات Cinemeta أول، وبعدها الأنمي.\n- البلگنات تشتغل على الايفون هم.\n- تحديث تلقائي للاندرويد من هذا الريبو.\n",
           "downloadURL": "https://github.com/Abn3li1/CinemaHome-Mobile/releases/download/0.6.10/CinemaHome-0.6.10.ipa",
           "size": 67662624,
           "sha256": "14eec914e82f88a0bac9d49e08a5ca6aea34c61b2c4700fc9913639ded7296d8",
           "minOSVersion": "16.1"
         }
       ],
-      "appPermissions": { "entitlements": [], "privacy": {} }
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
     }
   ],
   "news": []
